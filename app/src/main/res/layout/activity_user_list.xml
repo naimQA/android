@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/headerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/my_primary">
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/white"
+        android:backgroundTint="@color/my_primary"
+        android:padding="8dp"
+        android:drawableStart="@drawable/baseline_arrow_back_24"
+        android:drawablePadding="8dp" />
+
+    <!-- Header -->
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="User List"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:backgroundTint="@color/my_primary" />
+    </LinearLayout>
+    <!-- ListView -->
+
+
+    <ListView
+        android:id="@+id/userListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerTextView"
+        android:padding="8dp"
+        android:divider="@color/my_primary"
+        android:dividerHeight="1dp"
+
+        android:scrollbars="none" />
+</RelativeLayout>
